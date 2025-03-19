@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hitungan Mundur Hari Spesial</title>
+    <title>CountdownPaniiii</title>
     <style>
         body {
             font-family: 'Pacifico', cursive;
@@ -109,9 +109,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>💕 Hitungan Mundur Menuju Hari Istimewa 💕</h1>
+    <h1>💕Countdown 💕<br>Harii Special<br>Paniiiii🥳🩵</h1>
     <div id="countdown"></div>
-    <a id="specialButton" class="button" href="https://atharaif.github.io/HBDPaniiiii/" target="_blank">Klik di sini 💖</a>
+    <a id="specialButton" class="button" href="https://atharaif.github.io/HBDPaniiiii/" target="_blank">Kadoonya Sayaanggg🩵</a>
     <canvas id="confetti" class="hidden"></canvas>
 
     <!-- Audio untuk countdown dan confetti -->
@@ -145,7 +145,7 @@
             const button = document.getElementById("specialButton");
 
             if (difference <= 0) {
-                document.getElementById("countdown").innerHTML = "🎈 Selamat Hari Spesial, Sayang! 💖";
+                document.getElementById("countdown").innerHTML = "🎈 Selamat Hari Spesial, Cantikkkk🥳🩵";
                 document.getElementById("confetti").classList.remove("hidden");
                 button.style.display = "inline-block";
                 startConfetti();
@@ -155,7 +155,7 @@
                 const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                 const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
                 const seconds = Math.floor((difference % (1000 * 60)) / 1000);
-                document.getElementById("countdown").innerHTML = `💕 ${days} Hari ${hours} Jam ${minutes} Menit ${seconds} Detik 💕`;
+                document.getElementById("countdown").innerHTML = `💕 ${hours} Jam ${minutes} Menit ${seconds} Detik 💕`;
 
                 // Memainkan suara countdown ketika tinggal 10 detik
                 if (difference <= 10000 && difference > 0) {
